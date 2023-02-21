@@ -1,0 +1,394 @@
+,0
+0,total_ACT_Canberra_Business
+1,total_ACT_Canberra_Holiday
+2,total_ACT_Canberra_Other
+3,total_ACT_Canberra_Visiting
+4,total_New South Wales_Blue Mountains_Business
+5,total_New South Wales_Blue Mountains_Holiday
+6,total_New South Wales_Blue Mountains_Other
+7,total_New South Wales_Blue Mountains_Visiting
+8,total_New South Wales_Capital Country_Business
+9,total_New South Wales_Capital Country_Holiday
+10,total_New South Wales_Capital Country_Other
+11,total_New South Wales_Capital Country_Visiting
+12,total_New South Wales_Central Coast_Business
+13,total_New South Wales_Central Coast_Holiday
+14,total_New South Wales_Central Coast_Other
+15,total_New South Wales_Central Coast_Visiting
+16,total_New South Wales_Central NSW_Business
+17,total_New South Wales_Central NSW_Holiday
+18,total_New South Wales_Central NSW_Other
+19,total_New South Wales_Central NSW_Visiting
+20,total_New South Wales_Hunter_Business
+21,total_New South Wales_Hunter_Holiday
+22,total_New South Wales_Hunter_Other
+23,total_New South Wales_Hunter_Visiting
+24,total_New South Wales_New England North West_Business
+25,total_New South Wales_New England North West_Holiday
+26,total_New South Wales_New England North West_Other
+27,total_New South Wales_New England North West_Visiting
+28,total_New South Wales_North Coast NSW_Business
+29,total_New South Wales_North Coast NSW_Holiday
+30,total_New South Wales_North Coast NSW_Other
+31,total_New South Wales_North Coast NSW_Visiting
+32,total_New South Wales_Outback NSW_Business
+33,total_New South Wales_Outback NSW_Holiday
+34,total_New South Wales_Outback NSW_Other
+35,total_New South Wales_Outback NSW_Visiting
+36,total_New South Wales_Riverina_Business
+37,total_New South Wales_Riverina_Holiday
+38,total_New South Wales_Riverina_Other
+39,total_New South Wales_Riverina_Visiting
+40,total_New South Wales_Snowy Mountains_Business
+41,total_New South Wales_Snowy Mountains_Holiday
+42,total_New South Wales_Snowy Mountains_Other
+43,total_New South Wales_Snowy Mountains_Visiting
+44,total_New South Wales_South Coast_Business
+45,total_New South Wales_South Coast_Holiday
+46,total_New South Wales_South Coast_Other
+47,total_New South Wales_South Coast_Visiting
+48,total_New South Wales_Sydney_Business
+49,total_New South Wales_Sydney_Holiday
+50,total_New South Wales_Sydney_Other
+51,total_New South Wales_Sydney_Visiting
+52,total_New South Wales_The Murray_Business
+53,total_New South Wales_The Murray_Holiday
+54,total_New South Wales_The Murray_Other
+55,total_New South Wales_The Murray_Visiting
+56,total_Northern Territory_Alice Springs_Business
+57,total_Northern Territory_Alice Springs_Holiday
+58,total_Northern Territory_Alice Springs_Other
+59,total_Northern Territory_Alice Springs_Visiting
+60,total_Northern Territory_Barkly_Business
+61,total_Northern Territory_Barkly_Holiday
+62,total_Northern Territory_Barkly_Other
+63,total_Northern Territory_Barkly_Visiting
+64,total_Northern Territory_Darwin_Business
+65,total_Northern Territory_Darwin_Holiday
+66,total_Northern Territory_Darwin_Other
+67,total_Northern Territory_Darwin_Visiting
+68,total_Northern Territory_East Coast_Business
+69,total_Northern Territory_East Coast_Holiday
+70,total_Northern Territory_East Coast_Other
+71,total_Northern Territory_East Coast_Visiting
+72,total_Northern Territory_Hobart and the South_Business
+73,total_Northern Territory_Hobart and the South_Holiday
+74,total_Northern Territory_Hobart and the South_Other
+75,total_Northern Territory_Hobart and the South_Visiting
+76,total_Northern Territory_Kakadu Arnhem_Business
+77,total_Northern Territory_Kakadu Arnhem_Holiday
+78,total_Northern Territory_Kakadu Arnhem_Other
+79,total_Northern Territory_Kakadu Arnhem_Visiting
+80,total_Northern Territory_Katherine Daly_Business
+81,total_Northern Territory_Katherine Daly_Holiday
+82,total_Northern Territory_Katherine Daly_Other
+83,total_Northern Territory_Katherine Daly_Visiting
+84,total_Northern Territory_Lasseter_Business
+85,total_Northern Territory_Lasseter_Holiday
+86,total_Northern Territory_Lasseter_Other
+87,total_Northern Territory_Lasseter_Visiting
+88,"total_Northern Territory_Launceston, Tamar and the North_Business"
+89,"total_Northern Territory_Launceston, Tamar and the North_Holiday"
+90,"total_Northern Territory_Launceston, Tamar and the North_Other"
+91,"total_Northern Territory_Launceston, Tamar and the North_Visiting"
+92,total_Northern Territory_MacDonnell_Business
+93,total_Northern Territory_MacDonnell_Holiday
+94,total_Northern Territory_MacDonnell_Other
+95,total_Northern Territory_MacDonnell_Visiting
+96,total_Northern Territory_North West_Business
+97,total_Northern Territory_North West_Holiday
+98,total_Northern Territory_North West_Other
+99,total_Northern Territory_North West_Visiting
+100,total_Northern Territory_Tasmania_Business
+101,total_Northern Territory_Tasmania_Holiday
+102,total_Northern Territory_Tasmania_Other
+103,total_Northern Territory_Tasmania_Visiting
+104,total_Northern Territory_Wilderness West_Business
+105,total_Northern Territory_Wilderness West_Holiday
+106,total_Northern Territory_Wilderness West_Other
+107,total_Northern Territory_Wilderness West_Visiting
+108,total_Queensland_Brisbane_Business
+109,total_Queensland_Brisbane_Holiday
+110,total_Queensland_Brisbane_Other
+111,total_Queensland_Brisbane_Visiting
+112,total_Queensland_Bundaberg_Business
+113,total_Queensland_Bundaberg_Holiday
+114,total_Queensland_Bundaberg_Other
+115,total_Queensland_Bundaberg_Visiting
+116,total_Queensland_Central Queensland_Business
+117,total_Queensland_Central Queensland_Holiday
+118,total_Queensland_Central Queensland_Other
+119,total_Queensland_Central Queensland_Visiting
+120,total_Queensland_Darling Downs_Business
+121,total_Queensland_Darling Downs_Holiday
+122,total_Queensland_Darling Downs_Other
+123,total_Queensland_Darling Downs_Visiting
+124,total_Queensland_Fraser Coast_Business
+125,total_Queensland_Fraser Coast_Holiday
+126,total_Queensland_Fraser Coast_Other
+127,total_Queensland_Fraser Coast_Visiting
+128,total_Queensland_Gold Coast_Business
+129,total_Queensland_Gold Coast_Holiday
+130,total_Queensland_Gold Coast_Other
+131,total_Queensland_Gold Coast_Visiting
+132,total_Queensland_Mackay_Business
+133,total_Queensland_Mackay_Holiday
+134,total_Queensland_Mackay_Other
+135,total_Queensland_Mackay_Visiting
+136,total_Queensland_Northern_Business
+137,total_Queensland_Northern_Holiday
+138,total_Queensland_Northern_Other
+139,total_Queensland_Northern_Visiting
+140,total_Queensland_Outback_Business
+141,total_Queensland_Outback_Holiday
+142,total_Queensland_Outback_Other
+143,total_Queensland_Outback_Visiting
+144,total_Queensland_Sunshine Coast_Business
+145,total_Queensland_Sunshine Coast_Holiday
+146,total_Queensland_Sunshine Coast_Other
+147,total_Queensland_Sunshine Coast_Visiting
+148,total_Queensland_Tropical North Queensland_Business
+149,total_Queensland_Tropical North Queensland_Holiday
+150,total_Queensland_Tropical North Queensland_Other
+151,total_Queensland_Tropical North Queensland_Visiting
+152,total_Queensland_Whitsundays_Business
+153,total_Queensland_Whitsundays_Holiday
+154,total_Queensland_Whitsundays_Other
+155,total_Queensland_Whitsundays_Visiting
+156,total_South Australia_Adelaide Hills_Business
+157,total_South Australia_Adelaide Hills_Holiday
+158,total_South Australia_Adelaide Hills_Other
+159,total_South Australia_Adelaide Hills_Visiting
+160,total_South Australia_Adelaide_Business
+161,total_South Australia_Adelaide_Holiday
+162,total_South Australia_Adelaide_Other
+163,total_South Australia_Adelaide_Visiting
+164,total_South Australia_Barossa_Business
+165,total_South Australia_Barossa_Holiday
+166,total_South Australia_Barossa_Other
+167,total_South Australia_Barossa_Visiting
+168,total_South Australia_Clare Valley_Business
+169,total_South Australia_Clare Valley_Holiday
+170,total_South Australia_Clare Valley_Other
+171,total_South Australia_Clare Valley_Visiting
+172,total_South Australia_Eyre Peninsula_Business
+173,total_South Australia_Eyre Peninsula_Holiday
+174,total_South Australia_Eyre Peninsula_Other
+175,total_South Australia_Eyre Peninsula_Visiting
+176,total_South Australia_Fleurieu Peninsula_Business
+177,total_South Australia_Fleurieu Peninsula_Holiday
+178,total_South Australia_Fleurieu Peninsula_Other
+179,total_South Australia_Fleurieu Peninsula_Visiting
+180,total_South Australia_Flinders Ranges and Outback_Business
+181,total_South Australia_Flinders Ranges and Outback_Holiday
+182,total_South Australia_Flinders Ranges and Outback_Other
+183,total_South Australia_Flinders Ranges and Outback_Visiting
+184,total_South Australia_Kangaroo Island_Business
+185,total_South Australia_Kangaroo Island_Holiday
+186,total_South Australia_Kangaroo Island_Other
+187,total_South Australia_Kangaroo Island_Visiting
+188,total_South Australia_Limestone Coast_Business
+189,total_South Australia_Limestone Coast_Holiday
+190,total_South Australia_Limestone Coast_Other
+191,total_South Australia_Limestone Coast_Visiting
+192,total_South Australia_Murraylands_Business
+193,total_South Australia_Murraylands_Holiday
+194,total_South Australia_Murraylands_Other
+195,total_South Australia_Murraylands_Visiting
+196,total_South Australia_Riverland_Business
+197,total_South Australia_Riverland_Holiday
+198,total_South Australia_Riverland_Other
+199,total_South Australia_Riverland_Visiting
+200,total_South Australia_Yorke Peninsula_Business
+201,total_South Australia_Yorke Peninsula_Holiday
+202,total_South Australia_Yorke Peninsula_Other
+203,total_South Australia_Yorke Peninsula_Visiting
+204,total_Victoria_Ballarat_Business
+205,total_Victoria_Ballarat_Holiday
+206,total_Victoria_Ballarat_Other
+207,total_Victoria_Ballarat_Visiting
+208,total_Victoria_Bendigo Loddon_Business
+209,total_Victoria_Bendigo Loddon_Holiday
+210,total_Victoria_Bendigo Loddon_Other
+211,total_Victoria_Bendigo Loddon_Visiting
+212,total_Victoria_Central Highlands_Business
+213,total_Victoria_Central Highlands_Holiday
+214,total_Victoria_Central Highlands_Other
+215,total_Victoria_Central Highlands_Visiting
+216,total_Victoria_Central Murray_Business
+217,total_Victoria_Central Murray_Holiday
+218,total_Victoria_Central Murray_Other
+219,total_Victoria_Central Murray_Visiting
+220,total_Victoria_Geelong_Business
+221,total_Victoria_Geelong_Holiday
+222,total_Victoria_Geelong_Other
+223,total_Victoria_Geelong_Visiting
+224,total_Victoria_Gippsland_Business
+225,total_Victoria_Gippsland_Holiday
+226,total_Victoria_Gippsland_Other
+227,total_Victoria_Gippsland_Visiting
+228,total_Victoria_Goulburn_Business
+229,total_Victoria_Goulburn_Holiday
+230,total_Victoria_Goulburn_Other
+231,total_Victoria_Goulburn_Visiting
+232,total_Victoria_High Country_Business
+233,total_Victoria_High Country_Holiday
+234,total_Victoria_High Country_Other
+235,total_Victoria_High Country_Visiting
+236,total_Victoria_Lakes_Business
+237,total_Victoria_Lakes_Holiday
+238,total_Victoria_Lakes_Other
+239,total_Victoria_Lakes_Visiting
+240,total_Victoria_Macedon_Business
+241,total_Victoria_Macedon_Holiday
+242,total_Victoria_Macedon_Other
+243,total_Victoria_Macedon_Visiting
+244,total_Victoria_Mallee_Business
+245,total_Victoria_Mallee_Holiday
+246,total_Victoria_Mallee_Other
+247,total_Victoria_Mallee_Visiting
+248,total_Victoria_Melbourne East_Business
+249,total_Victoria_Melbourne East_Holiday
+250,total_Victoria_Melbourne East_Other
+251,total_Victoria_Melbourne East_Visiting
+252,total_Victoria_Melbourne_Business
+253,total_Victoria_Melbourne_Holiday
+254,total_Victoria_Melbourne_Other
+255,total_Victoria_Melbourne_Visiting
+256,total_Victoria_Murray East_Business
+257,total_Victoria_Murray East_Holiday
+258,total_Victoria_Murray East_Other
+259,total_Victoria_Murray East_Visiting
+260,total_Victoria_Peninsula_Business
+261,total_Victoria_Peninsula_Holiday
+262,total_Victoria_Peninsula_Other
+263,total_Victoria_Peninsula_Visiting
+264,total_Victoria_Phillip Island_Business
+265,total_Victoria_Phillip Island_Holiday
+266,total_Victoria_Phillip Island_Other
+267,total_Victoria_Phillip Island_Visiting
+268,total_Victoria_Spa Country_Business
+269,total_Victoria_Spa Country_Holiday
+270,total_Victoria_Spa Country_Other
+271,total_Victoria_Spa Country_Visiting
+272,total_Victoria_Upper Yarra_Business
+273,total_Victoria_Upper Yarra_Holiday
+274,total_Victoria_Upper Yarra_Other
+275,total_Victoria_Upper Yarra_Visiting
+276,total_Victoria_Western Grampians_Business
+277,total_Victoria_Western Grampians_Holiday
+278,total_Victoria_Western Grampians_Other
+279,total_Victoria_Western Grampians_Visiting
+280,total_Victoria_Western_Business
+281,total_Victoria_Western_Holiday
+282,total_Victoria_Western_Other
+283,total_Victoria_Western_Visiting
+284,total_Victoria_Wimmera_Business
+285,total_Victoria_Wimmera_Holiday
+286,total_Victoria_Wimmera_Other
+287,total_Victoria_Wimmera_Visiting
+288,total_Western Australia_Australia's Coral Coast_Business
+289,total_Western Australia_Australia's Coral Coast_Holiday
+290,total_Western Australia_Australia's Coral Coast_Other
+291,total_Western Australia_Australia's Coral Coast_Visiting
+292,total_Western Australia_Australia's Golden Outback_Business
+293,total_Western Australia_Australia's Golden Outback_Holiday
+294,total_Western Australia_Australia's Golden Outback_Other
+295,total_Western Australia_Australia's Golden Outback_Visiting
+296,total_Western Australia_Australia's North West_Business
+297,total_Western Australia_Australia's North West_Holiday
+298,total_Western Australia_Australia's North West_Other
+299,total_Western Australia_Australia's North West_Visiting
+300,total_Western Australia_Australia's South West_Business
+301,total_Western Australia_Australia's South West_Holiday
+302,total_Western Australia_Australia's South West_Other
+303,total_Western Australia_Australia's South West_Visiting
+304,total_Western Australia_Experience Perth_Business
+305,total_Western Australia_Experience Perth_Holiday
+306,total_Western Australia_Experience Perth_Other
+307,total_Western Australia_Experience Perth_Visiting
+308,total_Victoria_Wimmera
+309,total_Queensland_Whitsundays
+310,total_Victoria_Western Grampians
+311,total_Victoria_Western
+312,total_Victoria_Upper Yarra
+313,total_Queensland_Tropical North Queensland
+314,total_New South Wales_The Murray
+315,total_New South Wales_Sydney
+316,total_Queensland_Sunshine Coast
+317,total_Victoria_Spa Country
+318,total_New South Wales_South Coast
+319,total_New South Wales_Snowy Mountains
+320,total_South Australia_Riverland
+321,total_New South Wales_Riverina
+322,total_Victoria_Phillip Island
+323,total_South Australia_Yorke Peninsula
+324,total_Victoria_Peninsula
+325,total_New South Wales_Outback NSW
+326,total_Queensland_Outback
+327,total_Northern Territory_Wilderness West
+328,total_Northern Territory_Tasmania
+329,total_Queensland_Northern
+330,total_Northern Territory_North West
+331,total_New South Wales_North Coast NSW
+332,total_New South Wales_New England North West
+333,total_South Australia_Murraylands
+334,total_Victoria_Murray East
+335,total_Victoria_Melbourne East
+336,total_Victoria_Melbourne
+337,total_Victoria_Mallee
+338,total_Queensland_Mackay
+339,total_Victoria_Macedon
+340,total_Northern Territory_MacDonnell
+341,total_South Australia_Limestone Coast
+342,"total_Northern Territory_Launceston, Tamar and the North"
+343,total_Northern Territory_Lasseter
+344,total_Victoria_Lakes
+345,total_Northern Territory_Katherine Daly
+346,total_South Australia_Kangaroo Island
+347,total_Northern Territory_Kakadu Arnhem
+348,total_New South Wales_Hunter
+349,total_Northern Territory_Hobart and the South
+350,total_Victoria_High Country
+351,total_Victoria_Goulburn
+352,total_Queensland_Gold Coast
+353,total_Victoria_Gippsland
+354,total_Victoria_Geelong
+355,total_Queensland_Fraser Coast
+356,total_South Australia_Flinders Ranges and Outback
+357,total_South Australia_Fleurieu Peninsula
+358,total_South Australia_Eyre Peninsula
+359,total_Western Australia_Experience Perth
+360,total_Northern Territory_East Coast
+361,total_Northern Territory_Darwin
+362,total_Queensland_Darling Downs
+363,total_South Australia_Clare Valley
+364,total_Queensland_Central Queensland
+365,total_New South Wales_Central NSW
+366,total_Victoria_Central Murray
+367,total_Victoria_Central Highlands
+368,total_New South Wales_Central Coast
+369,total_New South Wales_Capital Country
+370,total_ACT_Canberra
+371,total_Queensland_Bundaberg
+372,total_Queensland_Brisbane
+373,total_New South Wales_Blue Mountains
+374,total_Victoria_Bendigo Loddon
+375,total_South Australia_Barossa
+376,total_Northern Territory_Barkly
+377,total_Victoria_Ballarat
+378,total_Western Australia_Australia's South West
+379,total_Western Australia_Australia's North West
+380,total_Western Australia_Australia's Golden Outback
+381,total_Western Australia_Australia's Coral Coast
+382,total_Northern Territory_Alice Springs
+383,total_South Australia_Adelaide Hills
+384,total_South Australia_Adelaide
+385,total_ACT
+386,total_Queensland
+387,total_New South Wales
+388,total_Victoria
+389,total_Western Australia
+390,total_Northern Territory
+391,total_South Australia
+392,total

@@ -1,0 +1,895 @@
+[10:26:05] DeepAR.Searcher: Running on GPU: [0]
+[10:28:24] DeepAR.Searcher: Running on GPU: [0]
+[14:35:40] DeepAR.Searcher: Running on GPU: [0]
+[14:45:35] DeepAR.Searcher: Running on GPU: [0]
+[14:53:52] DeepAR.Searcher: Running on GPU: [0]
+[15:00:27] DeepAR.Searcher: Running on GPU: [0]
+[15:33:58] DeepAR.Searcher: Running on GPU: [0]
+[15:34:56] DeepAR.Searcher: Running on GPU: [0]
+[15:45:30] DeepAR.Searcher: Running on GPU: [0]
+[16:08:33] DeepAR.Searcher: Running on GPU: [0]
+[16:09:02] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:09:20] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:10:40] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:11:40] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:11:50] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 5 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 6 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 7 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 8 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 9 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 10 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 11 using GPU 0
+[16:11:50] DeepAR.Searcher: Worker 1 running 12 using GPU 0
+[16:12:36] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:12:46] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[16:12:46] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[16:12:46] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[16:12:46] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[16:12:46] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[16:12:46] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[16:12:46] DeepAR.Searcher: Worker 2 running 5 using GPU 1
+[16:12:46] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[16:12:46] DeepAR.Searcher: Worker 2 running 6 using GPU 1
+[16:12:46] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[16:12:46] DeepAR.Searcher: Worker 1 running 5 using GPU 0
+[16:12:46] DeepAR.Searcher: Worker 2 running 7 using GPU 1
+[16:13:27] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:13:37] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[16:13:37] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.00-lstm_hidden_dim_5.00\params.json
+[16:13:37] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=elect --data-folder=data --save-best 
+[16:13:37] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[16:13:37] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.00-lstm_hidden_dim_35.00\params.json
+[16:13:37] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=elect --data-folder=data --save-best 
+[16:13:37] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[16:13:37] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.10-lstm_hidden_dim_5.00\params.json
+[16:13:37] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.10-lstm_hidden_dim_5.00 --dataset=elect --data-folder=data --save-best 
+[16:13:37] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[16:13:37] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.10-lstm_hidden_dim_35.00\params.json
+[16:13:37] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.10-lstm_hidden_dim_35.00 --dataset=elect --data-folder=data --save-best 
+[16:13:37] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[16:13:37] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[16:13:37] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.20-lstm_hidden_dim_5.00\params.json
+[16:13:37] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.20-lstm_hidden_dim_35.00\params.json
+[16:13:37] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=elect --data-folder=data --save-best 
+[16:13:37] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=elect --data-folder=data --save-best 
+[16:13:37] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[16:13:37] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.30-lstm_hidden_dim_5.00\params.json
+[16:13:37] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.30-lstm_hidden_dim_5.00 --dataset=elect --data-folder=data --save-best 
+[16:13:38] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[16:13:38] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[16:13:38] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.30-lstm_hidden_dim_35.00\params.json
+[16:13:38] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.30-lstm_hidden_dim_35.00 --dataset=elect --data-folder=data --save-best 
+[16:13:38] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.40-lstm_hidden_dim_5.00\params.json
+[16:13:38] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=elect --data-folder=data --save-best 
+[16:13:38] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[16:13:38] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.40-lstm_hidden_dim_35.00\params.json
+[16:13:38] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=elect --data-folder=data --save-best 
+[16:13:38] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[16:13:38] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.50-lstm_hidden_dim_5.00\params.json
+[16:13:38] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.50-lstm_hidden_dim_5.00 --dataset=elect --data-folder=data --save-best 
+[16:13:38] DeepAR.Searcher: Worker 2 running 5 using GPU 1
+[16:13:38] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.50-lstm_hidden_dim_35.00\params.json
+[16:13:38] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.50-lstm_hidden_dim_35.00 --dataset=elect --data-folder=data --save-best 
+[16:16:02] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:16:15] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[16:16:15] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.00-lstm_hidden_dim_5.00\params.json
+[16:16:15] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:15] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[16:16:15] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.00-lstm_hidden_dim_35.00\params.json
+[16:16:15] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:15] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[16:16:15] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.10-lstm_hidden_dim_5.00\params.json
+[16:16:15] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.10-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:15] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[16:16:15] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.10-lstm_hidden_dim_35.00\params.json
+[16:16:15] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.10-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:15] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[16:16:15] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.20-lstm_hidden_dim_5.00\params.json
+[16:16:15] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:16] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[16:16:16] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.20-lstm_hidden_dim_35.00\params.json
+[16:16:16] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:16] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[16:16:16] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[16:16:16] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.30-lstm_hidden_dim_5.00\params.json
+[16:16:16] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.30-lstm_hidden_dim_35.00\params.json
+[16:16:16] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.30-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:16] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.30-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:16] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[16:16:16] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.40-lstm_hidden_dim_5.00\params.json
+[16:16:16] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:16] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[16:16:16] DeepAR.Searcher: Worker 1 running 5 using GPU 0
+[16:16:16] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.40-lstm_hidden_dim_35.00\params.json
+[16:16:16] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.50-lstm_hidden_dim_5.00\params.json
+[16:16:16] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.50-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:16] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[16:16:16] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[16:16:16] DeepAR.Searcher: Params saved to: experiments\param_search\lstm_dropout_0.50-lstm_hidden_dim_35.00\params.json
+[16:16:16] DeepAR.Searcher: D:\anaconda3\envs\hier2\python.exe train.py --model-name=param_search\lstm_dropout_0.50-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:33:52] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:33:52] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[14:33:52] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[14:33:52] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[14:33:52] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[14:33:52] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[14:33:52] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[14:33:52] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:33:52] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:33:52] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:33:55] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[14:33:55] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[14:33:55] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:33:55] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[14:33:55] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[14:33:55] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:33:58] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[14:33:58] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[14:33:58] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:33:58] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[14:33:58] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[14:33:58] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:34:01] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[14:34:01] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[14:34:01] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:34:01] DeepAR.Searcher: Worker 3 running 4 using GPU 2
+[14:34:01] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[14:34:01] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:34:04] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[14:34:04] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.70-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[14:34:04] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.70-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:34:04] DeepAR.Searcher: Worker 2 running 5 using GPU 1
+[14:34:04] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.80-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[14:34:04] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.80-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:34:05] DeepAR.Searcher: Worker 3 running 5 using GPU 2
+[14:34:05] DeepAR.Searcher: Params saved to: experiments/param_search/lambda_0.90-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[14:34:05] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lambda_0.90-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:40:48] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:40:48] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[14:40:48] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[14:40:48] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[14:40:48] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[14:40:48] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:40:48] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[14:40:48] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[14:40:48] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:40:48] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:46:42] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:46:42] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[14:46:42] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[14:46:42] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[14:46:42] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[14:46:42] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[14:46:42] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[14:46:42] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:46:42] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:46:42] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:47:27] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:47:27] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[14:47:27] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[14:47:27] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[14:47:27] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[14:47:27] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[14:47:27] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[14:47:27] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:47:27] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:47:27] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:49:04] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[14:49:04] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[14:49:04] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:49:08] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[14:49:08] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[14:49:08] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:49:13] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[14:49:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[14:49:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:50:39] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[14:50:39] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[14:50:39] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:50:51] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[14:50:51] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[14:50:51] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[14:50:55] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[14:50:55] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[14:50:55] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[14:52:17] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[14:52:17] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.70-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[14:52:17] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.70-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:24:33] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[15:24:33] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[15:24:33] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[15:24:33] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[15:24:33] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:24:33] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:24:33] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:24:33] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:24:33] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:24:33] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:26:10] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[15:26:10] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:26:10] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:26:16] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[15:26:16] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[15:26:16] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:26:32] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[15:26:32] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[15:26:32] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:27:50] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[15:27:50] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:27:50] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:27:57] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[15:27:57] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:27:57] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:28:19] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[15:28:19] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:28:19] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:29:03] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[15:29:03] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[15:29:03] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[15:29:03] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[15:29:03] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:29:03] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:29:03] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:29:03] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:29:03] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:29:03] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:30:42] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[15:30:42] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:30:42] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:38:53] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[15:38:53] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[15:38:53] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[15:38:53] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[15:38:53] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:38:53] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:38:53] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:38:53] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:38:53] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:38:53] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:40:35] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[15:40:35] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:40:35] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:46:03] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[15:46:03] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[15:46:03] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[15:46:03] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[15:46:03] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:46:03] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:46:03] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:46:03] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:46:03] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:46:03] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:47:48] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[15:47:48] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:47:48] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:50:29] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[15:50:29] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[15:50:29] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[15:50:29] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[15:50:29] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:50:29] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:50:29] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:50:29] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:50:29] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:50:29] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:51:15] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[15:51:15] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:51:15] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:51:15] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[15:51:15] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[15:51:15] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:52:02] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[15:52:02] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[15:52:02] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:52:02] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[15:52:02] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:52:02] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:54:34] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[15:54:34] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[15:54:34] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[15:54:34] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[15:54:34] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:54:34] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:54:34] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:54:34] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:54:34] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:54:34] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:55:20] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[15:55:20] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:55:20] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:55:21] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[15:55:21] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[15:55:21] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:56:06] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[15:56:06] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[15:56:06] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:56:07] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[15:56:07] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:56:07] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:56:36] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[15:56:36] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[15:56:36] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[15:56:36] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[15:56:36] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[15:56:36] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[15:56:36] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:56:36] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:56:36] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:56:36] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[15:58:15] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[15:58:15] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:58:15] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best 
+[15:59:55] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[15:59:55] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[15:59:55] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best 
+[16:24:49] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:24:49] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[16:24:49] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[16:24:49] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[16:24:49] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[16:24:49] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[16:24:49] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[16:24:49] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:24:49] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:24:49] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:07:23] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[17:07:23] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[17:07:23] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:12:51] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[17:12:51] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[17:12:51] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:20:03] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[17:20:03] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[17:20:03] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:55:13] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[17:55:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[17:55:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:55:19] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[17:55:19] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[17:55:19] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:15:10] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[18:15:10] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[18:15:10] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:37:40] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[18:37:40] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.70-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[18:37:40] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.70-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:43:01] DeepAR.Searcher: Worker 3 running 4 using GPU 2
+[18:43:01] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.80-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[18:43:01] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.80-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[19:10:24] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[19:10:24] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.90-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[19:10:24] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.90-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:55:23] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:55:23] DeepAR.Searcher: Already exist this train
+[16:55:23] DeepAR.Searcher: Already exist this train
+[16:55:23] DeepAR.Searcher: Already exist this train
+[16:55:23] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[16:55:23] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[16:55:23] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[16:55:23] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[16:55:23] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:55:23] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[16:55:23] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[16:55:23] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:55:23] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:41:25] DeepAR.Searcher: Already exist this train
+[17:41:25] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[17:41:25] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[17:41:25] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:47:32] DeepAR.Searcher: Already exist this train
+[17:47:32] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[17:47:32] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[17:47:32] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[17:54:35] DeepAR.Searcher: Already exist this train
+[17:54:35] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[17:54:35] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[17:54:35] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:27:13] DeepAR.Searcher: Already exist this train
+[18:27:13] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[18:27:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[18:27:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:38:28] DeepAR.Searcher: Already exist this train
+[18:38:28] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[18:38:28] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[18:38:28] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:54:07] DeepAR.Searcher: Already exist this train
+[18:54:07] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[18:54:07] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[18:54:07] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[19:18:15] DeepAR.Searcher: Already exist this train
+[19:18:15] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[19:18:15] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.70-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[19:18:15] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.70-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[19:24:02] DeepAR.Searcher: Already exist this train
+[19:24:02] DeepAR.Searcher: Worker 3 running 4 using GPU 2
+[19:24:02] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.80-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[19:24:02] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.80-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[19:53:39] DeepAR.Searcher: Already exist this train
+[19:53:39] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[19:53:39] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.90-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[19:53:39] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.90-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[22:13:58] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[22:13:58] DeepAR.Searcher: Already exist this train
+[22:13:58] DeepAR.Searcher: Already exist this train
+[22:13:58] DeepAR.Searcher: Already exist this train
+[22:13:58] DeepAR.Searcher: Already exist this train
+[22:13:58] DeepAR.Searcher: Already exist this train
+[22:13:58] DeepAR.Searcher: Already exist this train
+[22:13:58] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[22:13:58] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[22:13:58] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[22:13:58] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[22:13:58] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[22:13:58] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[22:13:58] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[22:13:58] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[22:13:58] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[23:01:14] DeepAR.Searcher: Already exist this train
+[23:01:14] DeepAR.Searcher: Already exist this train
+[23:01:14] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[23:01:14] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[23:01:14] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[23:06:41] DeepAR.Searcher: Already exist this train
+[23:06:41] DeepAR.Searcher: Already exist this train
+[23:06:41] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[23:06:41] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[23:06:41] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[23:11:37] DeepAR.Searcher: Already exist this train
+[23:11:37] DeepAR.Searcher: Already exist this train
+[23:11:37] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[23:11:37] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[23:11:37] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[23:53:28] DeepAR.Searcher: Already exist this train
+[23:53:28] DeepAR.Searcher: Already exist this train
+[23:53:28] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[23:53:28] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[23:53:28] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[23:53:41] DeepAR.Searcher: Already exist this train
+[23:53:41] DeepAR.Searcher: Already exist this train
+[23:53:41] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[23:53:41] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[23:53:41] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[00:12:36] DeepAR.Searcher: Already exist this train
+[00:12:36] DeepAR.Searcher: Already exist this train
+[00:12:36] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[00:12:36] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.70-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[00:12:36] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.70-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[00:40:25] DeepAR.Searcher: Already exist this train
+[00:40:25] DeepAR.Searcher: Already exist this train
+[00:40:25] DeepAR.Searcher: Worker 3 running 4 using GPU 2
+[00:40:25] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.70-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[00:40:25] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.70-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[00:45:54] DeepAR.Searcher: Already exist this train
+[00:45:54] DeepAR.Searcher: Already exist this train
+[00:45:54] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[00:45:54] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.80-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[00:45:54] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.80-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[01:11:06] DeepAR.Searcher: Already exist this train
+[01:11:06] DeepAR.Searcher: Already exist this train
+[01:11:06] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[01:11:06] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.90-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[01:11:06] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.90-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[09:53:13] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Already exist this train
+[09:53:13] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[09:53:13] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[09:53:13] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[09:53:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[09:53:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[09:53:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[09:53:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[09:53:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[09:53:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[10:38:14] DeepAR.Searcher: Already exist this train
+[10:38:14] DeepAR.Searcher: Already exist this train
+[10:38:14] DeepAR.Searcher: Already exist this train
+[10:38:14] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[10:38:14] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[10:38:14] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[10:42:20] DeepAR.Searcher: Already exist this train
+[10:42:20] DeepAR.Searcher: Already exist this train
+[10:42:20] DeepAR.Searcher: Already exist this train
+[10:42:20] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[10:42:20] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[10:42:20] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[10:52:20] DeepAR.Searcher: Already exist this train
+[10:52:20] DeepAR.Searcher: Already exist this train
+[10:52:20] DeepAR.Searcher: Already exist this train
+[10:52:20] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[10:52:20] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[10:52:20] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[11:23:24] DeepAR.Searcher: Already exist this train
+[11:23:24] DeepAR.Searcher: Already exist this train
+[11:23:24] DeepAR.Searcher: Already exist this train
+[11:23:24] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[11:23:24] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[11:23:24] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[11:32:27] DeepAR.Searcher: Already exist this train
+[11:32:27] DeepAR.Searcher: Already exist this train
+[11:32:27] DeepAR.Searcher: Already exist this train
+[11:32:27] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[11:32:27] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[11:32:27] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[11:50:45] DeepAR.Searcher: Already exist this train
+[11:50:45] DeepAR.Searcher: Already exist this train
+[11:50:45] DeepAR.Searcher: Already exist this train
+[11:50:45] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[11:50:45] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.70-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[11:50:45] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.70-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[12:13:22] DeepAR.Searcher: Already exist this train
+[12:13:22] DeepAR.Searcher: Already exist this train
+[12:13:22] DeepAR.Searcher: Already exist this train
+[12:13:22] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[12:13:22] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.80-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[12:13:22] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.80-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[12:17:17] DeepAR.Searcher: Already exist this train
+[12:17:17] DeepAR.Searcher: Already exist this train
+[12:17:17] DeepAR.Searcher: Already exist this train
+[12:17:17] DeepAR.Searcher: Worker 3 running 4 using GPU 2
+[12:17:17] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.80-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[12:17:17] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.80-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[12:49:15] DeepAR.Searcher: Already exist this train
+[12:49:15] DeepAR.Searcher: Already exist this train
+[12:49:15] DeepAR.Searcher: Already exist this train
+[12:49:15] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[12:49:15] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.90-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[12:49:15] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.90-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[13:55:30] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Already exist this train
+[13:55:30] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[13:55:30] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[13:55:30] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[13:55:30] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[13:55:30] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[13:55:30] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.10-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[13:55:30] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[13:55:30] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.20-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[13:55:30] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.10-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:42:52] DeepAR.Searcher: Already exist this train
+[14:42:52] DeepAR.Searcher: Already exist this train
+[14:42:52] DeepAR.Searcher: Already exist this train
+[14:42:52] DeepAR.Searcher: Already exist this train
+[14:42:52] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[14:42:52] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.30-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[14:42:52] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.30-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:45:36] DeepAR.Searcher: Already exist this train
+[14:45:36] DeepAR.Searcher: Already exist this train
+[14:45:36] DeepAR.Searcher: Already exist this train
+[14:45:36] DeepAR.Searcher: Already exist this train
+[14:45:36] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[14:45:36] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[14:45:36] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:56:45] DeepAR.Searcher: Already exist this train
+[14:56:45] DeepAR.Searcher: Already exist this train
+[14:56:45] DeepAR.Searcher: Already exist this train
+[14:56:45] DeepAR.Searcher: Already exist this train
+[14:56:45] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[14:56:45] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.40-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[14:56:45] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.40-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[15:31:52] DeepAR.Searcher: Already exist this train
+[15:31:52] DeepAR.Searcher: Already exist this train
+[15:31:52] DeepAR.Searcher: Already exist this train
+[15:31:52] DeepAR.Searcher: Already exist this train
+[15:31:52] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[15:31:52] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_5.00/params.json
+[15:31:52] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.50-lstm_dropout_0.40-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[15:32:33] DeepAR.Searcher: Already exist this train
+[15:32:33] DeepAR.Searcher: Already exist this train
+[15:32:33] DeepAR.Searcher: Already exist this train
+[15:32:33] DeepAR.Searcher: Already exist this train
+[15:32:33] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[15:32:33] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.60-lstm_dropout_0.20-lstm_hidden_dim_35.00/params.json
+[15:32:33] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.60-lstm_dropout_0.20-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[15:55:50] DeepAR.Searcher: Already exist this train
+[15:55:50] DeepAR.Searcher: Already exist this train
+[15:55:50] DeepAR.Searcher: Already exist this train
+[15:55:50] DeepAR.Searcher: Already exist this train
+[15:55:50] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[15:55:50] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.70-lstm_dropout_0.20-lstm_hidden_dim_5.00/params.json
+[15:55:50] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.70-lstm_dropout_0.20-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:17:09] DeepAR.Searcher: Already exist this train
+[16:17:09] DeepAR.Searcher: Already exist this train
+[16:17:09] DeepAR.Searcher: Already exist this train
+[16:17:09] DeepAR.Searcher: Already exist this train
+[16:17:09] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[16:17:09] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.80-lstm_dropout_0.00-lstm_hidden_dim_35.00/params.json
+[16:17:09] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.80-lstm_dropout_0.00-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:22:06] DeepAR.Searcher: Already exist this train
+[16:22:06] DeepAR.Searcher: Already exist this train
+[16:22:06] DeepAR.Searcher: Already exist this train
+[16:22:06] DeepAR.Searcher: Already exist this train
+[16:22:06] DeepAR.Searcher: Worker 3 running 4 using GPU 2
+[16:22:06] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.90-lstm_dropout_0.00-lstm_hidden_dim_5.00/params.json
+[16:22:06] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.90-lstm_dropout_0.00-lstm_hidden_dim_5.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:54:44] DeepAR.Searcher: Already exist this train
+[16:54:44] DeepAR.Searcher: Already exist this train
+[16:54:44] DeepAR.Searcher: Already exist this train
+[16:54:44] DeepAR.Searcher: Already exist this train
+[16:54:44] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[16:54:44] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.90-lstm_dropout_0.40-lstm_hidden_dim_35.00/params.json
+[16:54:44] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.90-lstm_dropout_0.40-lstm_hidden_dim_35.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:37:22] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[18:37:22] DeepAR.Searcher: Already exist this train
+[11:38:41] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[11:38:41] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[11:38:41] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[11:38:41] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[11:38:41] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.00/params.json
+[11:38:41] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.01-lstm_dropout_0.20/params.json
+[11:38:41] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[11:38:41] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.01-lstm_dropout_0.20 --dataset=tourism --data-folder=data --save-best  --sampling
+[11:38:41] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.02-lstm_dropout_0.40/params.json
+[11:38:41] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.02-lstm_dropout_0.40 --dataset=tourism --data-folder=data --save-best  --sampling
+[12:28:32] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[12:28:32] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.03-lstm_dropout_0.00/params.json
+[12:28:32] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.03-lstm_dropout_0.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[12:29:02] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[12:29:02] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.03-lstm_dropout_0.20/params.json
+[12:29:02] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.03-lstm_dropout_0.20 --dataset=tourism --data-folder=data --save-best  --sampling
+[13:15:26] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[13:15:26] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.04-lstm_dropout_0.40/params.json
+[13:15:26] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.04-lstm_dropout_0.40 --dataset=tourism --data-folder=data --save-best  --sampling
+[13:17:08] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[13:17:08] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.05-lstm_dropout_0.00/params.json
+[13:17:08] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.05-lstm_dropout_0.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[13:18:14] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[13:18:14] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.06-lstm_dropout_0.20/params.json
+[13:18:14] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.06-lstm_dropout_0.20 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:07:10] DeepAR.Searcher: Worker 3 running 4 using GPU 2
+[14:07:10] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.07-lstm_dropout_0.40/params.json
+[14:07:10] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.07-lstm_dropout_0.40 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:08:39] DeepAR.Searcher: Worker 2 running 4 using GPU 1
+[14:08:39] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.08-lstm_dropout_0.00/params.json
+[14:08:39] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.08-lstm_dropout_0.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:54:18] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[14:54:18] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.09-lstm_dropout_0.20/params.json
+[14:54:18] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.09-lstm_dropout_0.20 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:55:54] DeepAR.Searcher: Worker 3 running 5 using GPU 2
+[14:55:54] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.09-lstm_dropout_0.40/params.json
+[14:55:54] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.09-lstm_dropout_0.40 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:50:57] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[18:50:57] DeepAR.Searcher: Already exist this train
+[18:50:57] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[18:50:57] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[18:50:57] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[18:50:57] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.40/params.json
+[18:50:57] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.00-lstm_dropout_0.20/params.json
+[18:50:57] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.40 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:50:57] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.00-lstm_dropout_0.20 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:50:57] DeepAR.Searcher: Already exist this train
+[18:50:57] DeepAR.Searcher: Already exist this train
+[18:50:57] DeepAR.Searcher: Already exist this train
+[18:50:57] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[18:50:57] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.01-lstm_dropout_0.00/params.json
+[18:50:57] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.01-lstm_dropout_0.00 --dataset=tourism --data-folder=data --save-best  --sampling
+[19:39:18] DeepAR.Searcher: Already exist this train
+[19:39:18] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[19:39:18] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.01-lstm_dropout_0.40/params.json
+[19:39:18] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.01-lstm_dropout_0.40 --dataset=tourism --data-folder=data --save-best  --sampling
+[19:39:25] DeepAR.Searcher: Already exist this train
+[19:39:25] DeepAR.Searcher: Already exist this train
+[19:39:25] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:29:50] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:31:14] DeepAR.Searcher: Already exist this train
+[14:33:33] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.20
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.00
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.40
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.00
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.40
+[14:33:33] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.20
+[14:34:06] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.20
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.00
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.40
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.00
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.40
+[14:34:06] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.20
+[14:43:50] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:43:50] DeepAR.Searcher: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2), (4, 0), (4, 1), (4, 2)]
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.00
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.40
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.20
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.00-lstm_dropout_0.20
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.00
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.40
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.00
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.40
+[14:43:50] DeepAR.Searcher: Already exist this trainlam_0.01-lstm_dropout_0.20
+[14:45:27] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[14:45:27] DeepAR.Searcher: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2), (4, 0), (4, 1), (4, 2)]
+[14:45:27] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[14:45:27] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.0-lstm_dropout_0.0/params.json
+[14:45:27] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.0-lstm_dropout_0.0 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:45:27] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[14:45:27] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[14:45:27] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.0-lstm_dropout_0.4/params.json
+[14:45:27] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.002-lstm_dropout_0.2/params.json
+[14:45:27] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.0-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:45:27] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.002-lstm_dropout_0.2 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:45:48] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[14:45:48] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.004-lstm_dropout_0.0/params.json
+[14:45:48] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.004-lstm_dropout_0.0 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:46:13] DeepAR.Searcher: Worker 1 running 3 using GPU 0
+[14:46:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.004-lstm_dropout_0.4/params.json
+[14:46:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.004-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:46:38] DeepAR.Searcher: Worker 1 running 4 using GPU 0
+[14:46:38] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.006-lstm_dropout_0.2/params.json
+[14:46:38] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.006-lstm_dropout_0.2 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:47:02] DeepAR.Searcher: Worker 1 running 5 using GPU 0
+[14:47:02] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.008-lstm_dropout_0.0/params.json
+[14:47:02] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.008-lstm_dropout_0.0 --dataset=tourism --data-folder=data --save-best  --sampling
+[14:47:28] DeepAR.Searcher: Worker 1 running 6 using GPU 0
+[14:47:28] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.008-lstm_dropout_0.4/params.json
+[14:47:28] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.008-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:14:36] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[18:14:36] DeepAR.Searcher: [(0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (2, 0), (2, 1), (2, 2), (3, 0), (3, 1), (3, 2), (4, 0), (4, 1), (4, 2)]
+[18:14:37] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[18:14:37] DeepAR.Searcher: Worker 2 running 1 using GPU 1
+[18:14:37] DeepAR.Searcher: Already exist this trainlam_0.002-lstm_dropout_0.2
+[18:14:37] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.0-lstm_dropout_0.0/params.json
+[18:14:37] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.0-lstm_dropout_0.4/params.json
+[18:14:37] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.0-lstm_dropout_0.0 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:14:37] DeepAR.Searcher: Worker 3 running 1 using GPU 2
+[18:14:37] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.0-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
+[18:14:37] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.002-lstm_dropout_0.4/params.json
+[18:14:37] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.002-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
+[20:25:19] DeepAR.Searcher: Worker 2 running 2 using GPU 1
+[20:25:19] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.004-lstm_dropout_0.0/params.json
+[20:25:19] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.004-lstm_dropout_0.0 --dataset=tourism --data-folder=data --save-best  --sampling
+[20:26:09] DeepAR.Searcher: Worker 3 running 2 using GPU 2
+[20:26:09] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.004-lstm_dropout_0.4/params.json
+[20:26:09] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.004-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
+[22:09:41] DeepAR.Searcher: Worker 3 running 3 using GPU 2
+[22:09:41] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.006-lstm_dropout_0.2/params.json
+[22:09:41] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.006-lstm_dropout_0.2 --dataset=tourism --data-folder=data --save-best  --sampling
+[22:10:26] DeepAR.Searcher: Worker 2 running 3 using GPU 1
+[22:10:26] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.008-lstm_dropout_0.0/params.json
+[22:10:26] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.008-lstm_dropout_0.0 --dataset=tourism --data-folder=data --save-best  --sampling
+[22:56:13] DeepAR.Searcher: Worker 1 running 2 using GPU 0
+[22:56:13] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.008-lstm_dropout_0.4/params.json
+[22:56:13] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.008-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
+[16:45:17] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:45:17] DeepAR.Searcher: [(0, 0)]
+[16:45:17] DeepAR.Searcher: Already exist this trainlam_0.002-lstm_dropout_0.4
+[16:45:44] DeepAR.Searcher: Running on GPU: [0, 1, 2]
+[16:45:44] DeepAR.Searcher: [(0, 0)]
+[16:45:44] DeepAR.Searcher: Worker 1 running 1 using GPU 0
+[16:45:44] DeepAR.Searcher: Params saved to: experiments/param_search/lam_0.002-lstm_dropout_0.4/params.json
+[16:45:44] DeepAR.Searcher: /root/miniconda3/bin/python train.py --model-name=param_search/lam_0.002-lstm_dropout_0.4 --dataset=tourism --data-folder=data --save-best  --sampling
