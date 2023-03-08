@@ -18,7 +18,7 @@ import logging
 logger = logging.getLogger('arima_hier')
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default='tourism', help='Name of the dataset')
+parser.add_argument('--dataset', default='infant', help='Name of the dataset')
 parser.add_argument('--fcst_model', default='arima', help='Base forecast model')
 parser.add_argument('--permute_method', default='stack', help='The permutation of sample')
 parser.add_argument('--rcc_method', default='mint', help='Reconciliation method')
@@ -71,11 +71,7 @@ def prepare_data(freq1,freq2):
 
     return data,hier_dict,final_hier_dict2
 
-def arima_prob(y_,fh,sp,max_p,max_q,d=None):
-    transformer = HampelFilter(window_length=10)
-    y = transformer.fit_transform(y_)
-    y = y.fillna(method='ffill')
-    y = y.fillna(method='bfill')
+def arima_prob(y,fh,sp,max_p,max_q,d=None):
     forecaster = AutoARIMA(sp=sp, d=d, max_p=max_p, max_q=max_q, suppress_warnings=True) 
     # step 4: fitting the forecaster
     forecaster.fit(y, fh=fh)
@@ -85,11 +81,8 @@ def arima_prob(y_,fh,sp,max_p,max_q,d=None):
 
     return mu_pred,var_pred[0]
 
-def ets_prob(y_,fh,sp):
-  transformer = HampelFilter(window_length=10)
-  y = transformer.fit_transform(y_)
-  y = y.fillna(method='ffill')
-  y = y.fillna(method='bfill')
+def ets_prob(y,fh,sp):
+
   if sp!=1:
     model = ExponentialSmoothing(endog=y, trend=True,seasonal=sp)
   else:
@@ -266,29 +259,25 @@ def plot_and_eval(ytrue:pd.Series,pred_mu:pd.Series,pred_std:pd.Series,ax,series
     ax.legend(loc='best',fontsize= 15)
     return avg_crps
 
-
 if __name__=='__main__':
 
-    # np.random.seed(2022)
     args = parser.parse_args()
     data_name = args.dataset
     fcst_model = args.fcst_model
     permute_method = args.permute_method
     rcc_method = args.rcc_method
     rcc_cov = args.rcc_covariance
-
+    
     res_dir = fcst_model+'_'+permute_method+'_'+rcc_method+'_'+f"{rcc_cov if rcc_cov else 'none'}"
 
-    if not os.path.exists(f'result2/{res_dir}'): 
-        os.makedirs(f'result2/{res_dir}')
-    group_names = ['State','Region','Purpose']
-    time_name = 'Quarter'
-    target_name = 'Trips'
+    group_names = ['state','gender']
+    time_name = 'year'
+    target_name = 'deaths'
 
-    if not os.path.exists(f'result/{fcst_model}_hier'): 
-        os.makedirs(f'result/{fcst_model}_hier')
+    if not os.path.exists(f'result/{res_dir}'): 
+        os.makedirs(f'result/{res_dir}')
 
-    data,hier_dict,final_hier_dict2 = prepare_data('QS','Q')
+    data,hier_dict,final_hier_dict2 = prepare_data('Y','Y')
 
     np.save(f'data/{data_name}/hier_dict_name.npy', hier_dict)
     series_names = list(data.columns)
@@ -296,8 +285,8 @@ if __name__=='__main__':
     np.save(f'data/{data_name}/hier_dict.npy', final_hier_dict2)
 
     # train test split
-    train_end = '2015-10-01'
-    test_start = '2016-01-01' 
+    train_end = '1999-12-31'
+    test_start = '2000-12-31'
     train_data = data[:train_end]
     test_data = data[test_start:]
 
@@ -346,6 +335,8 @@ if __name__=='__main__':
     all_metrics={}
     crps_l=[]
     m=-1
+    mu_pred_l = []
+    std_pred_l = []
     for i in range(ax.shape[0]):
         for j in range(ax.shape[1]):
             m=m+1
@@ -358,12 +349,19 @@ if __name__=='__main__':
                 res_df2 =pd.concat([perm_df_l[pp][series_names[m]] for pp in range(len(perm_df_l))],axis=1)
                 perm_mu_pred = res_df2.mean(axis=1)
                 perm_std_pred = res_df2.std(axis=1)
-                crps = plot_and_eval(data[series_names[m]][-30:],mu_pred,std_pred,ax[i,j],series_names[m],origin_mu_pred,origin_std_pred,perm_mu_pred,perm_std_pred)
-                crps_l.append(crps)
+                mu_pred_l.append(mu_pred)
+                std_pred_l.append(std_pred)
+                # crps = plot_and_eval(data[series_names[m]][-30:],mu_pred,std_pred,ax[i,j],series_names[m],origin_mu_pred,origin_std_pred,perm_mu_pred,perm_std_pred)
+                # crps_l.append(crps)
                 print(f'Finish{m}')
-    plt.tight_layout()
-    all_metrics['crps']=crps_l
-    f.savefig(f'result/{res_dir}/res.png')
-    np.save(f'result/{res_dir}/metrics.npy', all_metrics)
-    plt.close()
+
+    mu_pred_df = pd.concat(mu_pred_l,axis=1)
+    std_pred_df = pd.concat(std_pred_l,axis=1)
+    mu_pred_df.columns = series_names
+    std_pred_df.columns = series_names
+    mu_pred_df.to_csv(f'result/{res_dir}/mu_pred.csv')
+    std_pred_df.to_csv(f'result/{res_dir}/std_pred.csv')
+
+
+
 

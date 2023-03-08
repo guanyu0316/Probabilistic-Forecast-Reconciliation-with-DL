@@ -1,0 +1,20 @@
+[12:36:13] DeepAR.Train: Loading the datasets...
+[12:36:13] DeepAR.Data: train_len: 700
+[12:36:13] DeepAR.Data: building datasets from data/infant...
+[12:36:13] DeepAR.Data: test_len: 75
+[12:36:13] DeepAR.Data: building datasets from data/infant...
+[12:36:13] DeepAR.Train: Loading complete.
+[12:36:13] DeepAR.Train: Model: 
+Net(
+  (embedding): Embedding(25, 20)
+  (lstm): LSTM(23, 5, num_layers=3, dropout=0.2)
+  (relu): ReLU()
+  (distribution_mu): Linear(in_features=15, out_features=1, bias=True)
+  (distribution_presigma): Linear(in_features=15, out_features=1, bias=True)
+  (distribution_sigma): Softplus(beta=1, threshold=20)
+)
+[12:36:13] DeepAR.Train: Starting training for 10 epoch(s)
+[12:36:13] DeepAR.Train: begin training and evaluation
+[12:36:13] DeepAR.Train: Epoch 1/10
+[12:36:13] DeepAR.Train: train_loss: 1.9397149085998535
+[12:36:13] DeepAR.Train: train_loss: 1.9397149085998535

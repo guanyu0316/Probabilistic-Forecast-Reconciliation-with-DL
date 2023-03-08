@@ -124,6 +124,7 @@ class Net(nn.Module):
                     x[self.params.predict_start + t + 1, :, 0] = mu_de
             return sample_mu, sample_sigma
 
+
     def test2(self, x, v_batch, id_batch, hidden, cell, sampling=False):
         batch_size = x.shape[1]
         if sampling:
@@ -158,6 +159,7 @@ class Net(nn.Module):
                 if t < (self.params.predict_steps - 1):
                     x[self.params.predict_start + t + 1, :, 0] = mu_de
             return sample_mu, sample_sigma
+
 
 
 def loss_fn(mu: Variable, sigma: Variable, labels: Variable, lam, dataset,is_target_b=False):
@@ -203,8 +205,8 @@ def loss_fn(mu: Variable, sigma: Variable, labels: Variable, lam, dataset,is_tar
         pred_dist = torch.distributions.normal.Normal(pred_mu, pred_sigma)
         pred_log_prob = pred_dist.log_prob(obs_sample)
 
-        KL_loss = nn.KLDivLoss(reduction="batchmean")
-        KL_reg1 = KL_loss(pred_log_prob, obs_log_prob.exp())
+        KL_loss1 = nn.KLDivLoss(reduction="mean")
+        KL_reg1 = KL_loss1(pred_log_prob.exp().softmax(dim=-1).log(), obs_log_prob.exp().softmax(dim=-1))
 
         # KL_reg2
         obs_sample = fixed_sample*(sigma[hier_dict[k]]**2).sum()**0.5+mu[hier_dict[k]].sum()
@@ -216,16 +218,19 @@ def loss_fn(mu: Variable, sigma: Variable, labels: Variable, lam, dataset,is_tar
         pred_dist = torch.distributions.normal.Normal(pred_mu, pred_sigma)
         pred_log_prob = pred_dist.log_prob(obs_sample)
 
-        KL_loss = nn.KLDivLoss(reduction="batchmean")
-        KL_reg2 = KL_loss(pred_log_prob, obs_log_prob.exp())
+        KL_loss2 = nn.KLDivLoss(reduction="mean")
+        KL_reg2 = KL_loss2(pred_log_prob.exp().softmax(dim=-1).log(), obs_log_prob.exp().softmax(dim=-1))
+        print(f'KL_reg1:{KL_reg1}')
+        print(f'KL_reg2:{KL_reg2}')
+        
 
         final_loss = final_loss+lam*(KL_reg1+KL_reg2)/2
-
+    print(f'final_loss:{final_loss}')
         
     return final_loss
 
 
-def loss_fn2(mu_: Variable, sigma_: Variable, labels_: Variable, lam, dataset, is_target_b=False):
+def loss_fn2(mu_: Variable, sigma_: Variable, labels_: Variable, lam, dataset, is_target_b=True):
     '''
     Compute using gaussian the log-likehood which needs to be maximized. Ignore time steps where labels are missing.
     Args:
@@ -273,8 +278,8 @@ def loss_fn2(mu_: Variable, sigma_: Variable, labels_: Variable, lam, dataset, i
             pred_dist = torch.distributions.normal.Normal(pred_mu, pred_sigma)
             pred_log_prob = pred_dist.log_prob(obs_sample)
 
-            KL_loss = nn.KLDivLoss(reduction="batchmean")
-            KL_reg1 = KL_loss(pred_log_prob, obs_log_prob.exp())
+            KL_loss1 = nn.KLDivLoss(reduction="mean")
+            KL_reg1 = KL_loss1(pred_log_prob.exp().softmax(dim=-1).log(), obs_log_prob.exp().softmax(dim=-1))
 
             # KL_reg2
             obs_sample = fixed_sample*(sigma[hier_dict[k]]**2).sum()**0.5+mu[hier_dict[k]].sum()
@@ -286,8 +291,8 @@ def loss_fn2(mu_: Variable, sigma_: Variable, labels_: Variable, lam, dataset, i
             pred_dist = torch.distributions.normal.Normal(pred_mu, pred_sigma)
             pred_log_prob = pred_dist.log_prob(obs_sample)
 
-            KL_loss = nn.KLDivLoss(reduction="batchmean")
-            KL_reg2 = KL_loss(pred_log_prob, obs_log_prob.exp())
+            KL_loss2 = nn.KLDivLoss(reduction="mean")
+            KL_reg2 = KL_loss2(pred_log_prob.exp().softmax(dim=-1).log(), obs_log_prob.exp().softmax(dim=-1))
 
             final_loss = final_loss+lam*(KL_reg1+KL_reg2)/2
 

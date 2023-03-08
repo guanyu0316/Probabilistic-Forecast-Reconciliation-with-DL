@@ -1,0 +1,93 @@
+[20:20:05] DeepAR.Train: Loading the datasets...
+[20:20:05] DeepAR.Data: train_len: 700
+[20:20:05] DeepAR.Data: building datasets from data/infant...
+[20:20:05] DeepAR.Data: test_len: 75
+[20:20:05] DeepAR.Data: building datasets from data/infant...
+[20:20:05] DeepAR.Train: Loading complete.
+[20:20:05] DeepAR.Train: Model: 
+Net(
+  (embedding): Embedding(25, 20)
+  (lstm): LSTM(23, 5, num_layers=3, dropout=0.2)
+  (relu): ReLU()
+  (distribution_mu): Linear(in_features=15, out_features=1, bias=True)
+  (distribution_presigma): Linear(in_features=15, out_features=1, bias=True)
+  (distribution_sigma): Softplus(beta=1, threshold=20)
+)
+[20:20:05] DeepAR.Train: Starting training for 10 epoch(s)
+[20:20:05] DeepAR.Train: begin training and evaluation
+[20:20:05] DeepAR.Train: Epoch 1/10
+[20:20:06] DeepAR.Train: train_loss: 1.939719557762146
+[20:20:06] DeepAR.Train: train_loss: 1.939719557762146
+[20:20:13] DeepAR.Eval: - Full test metrics: ND: 0.778; RMSE: 1.561; test_loss: 5.305
+[20:20:13] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_0.pth.tar
+[20:20:13] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:20:13] DeepAR.Train: - Found new best ND
+[20:20:13] DeepAR.Train: Current Best ND is: 0.77791
+[20:20:13] DeepAR.Train: Epoch 2/10
+[20:20:13] DeepAR.Train: train_loss: 1.341977596282959
+[20:20:13] DeepAR.Train: train_loss: 1.341977596282959
+[20:20:20] DeepAR.Eval: - Full test metrics: ND: 0.584; RMSE: 1.208; test_loss: 5.048
+[20:20:20] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_1.pth.tar
+[20:20:20] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:20:20] DeepAR.Train: - Found new best ND
+[20:20:20] DeepAR.Train: Current Best ND is: 0.58414
+[20:20:20] DeepAR.Train: Epoch 3/10
+[20:20:21] DeepAR.Train: train_loss: 1.061937928199768
+[20:20:21] DeepAR.Train: train_loss: 1.061937928199768
+[20:20:27] DeepAR.Eval: - Full test metrics: ND: 0.350; RMSE: 0.722; test_loss: 4.829
+[20:20:27] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_2.pth.tar
+[20:20:27] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:20:27] DeepAR.Train: - Found new best ND
+[20:20:27] DeepAR.Train: Current Best ND is: 0.34951
+[20:20:28] DeepAR.Train: Epoch 4/10
+[20:20:28] DeepAR.Train: train_loss: 0.8319127559661865
+[20:20:28] DeepAR.Train: train_loss: 0.8319127559661865
+[20:20:34] DeepAR.Eval: - Full test metrics: ND: 0.141; RMSE: 0.267; test_loss: 4.576
+[20:20:34] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_3.pth.tar
+[20:20:34] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:20:34] DeepAR.Train: - Found new best ND
+[20:20:34] DeepAR.Train: Current Best ND is: 0.14074
+[20:20:35] DeepAR.Train: Epoch 5/10
+[20:20:35] DeepAR.Train: train_loss: 0.5801413059234619
+[20:20:35] DeepAR.Train: train_loss: 0.5801413059234619
+[20:20:42] DeepAR.Eval: - Full test metrics: ND: 0.164; RMSE: 0.372; test_loss: 4.308
+[20:20:42] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_4.pth.tar
+[20:20:42] DeepAR.Train: Current Best ND is: 0.14074
+[20:20:42] DeepAR.Train: Epoch 6/10
+[20:20:43] DeepAR.Train: train_loss: 0.3521924912929535
+[20:20:43] DeepAR.Train: train_loss: 0.3521924912929535
+[20:20:49] DeepAR.Eval: - Full test metrics: ND: 0.151; RMSE: 0.353; test_loss: 4.110
+[20:20:49] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_5.pth.tar
+[20:20:49] DeepAR.Train: Current Best ND is: 0.14074
+[20:20:50] DeepAR.Train: Epoch 7/10
+[20:20:50] DeepAR.Train: train_loss: 0.18205605447292328
+[20:20:50] DeepAR.Train: train_loss: 0.18205605447292328
+[20:20:57] DeepAR.Eval: - Full test metrics: ND: 0.121; RMSE: 0.280; test_loss: 3.966
+[20:20:57] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_6.pth.tar
+[20:20:57] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:20:57] DeepAR.Train: - Found new best ND
+[20:20:57] DeepAR.Train: Current Best ND is: 0.12095
+[20:20:57] DeepAR.Train: Epoch 8/10
+[20:20:58] DeepAR.Train: train_loss: 0.055366434156894684
+[20:20:58] DeepAR.Train: train_loss: 0.055366434156894684
+[20:21:04] DeepAR.Eval: - Full test metrics: ND: 0.105; RMSE: 0.237; test_loss: 3.861
+[20:21:04] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_7.pth.tar
+[20:21:04] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:21:04] DeepAR.Train: - Found new best ND
+[20:21:04] DeepAR.Train: Current Best ND is: 0.10458
+[20:21:04] DeepAR.Train: Epoch 9/10
+[20:21:05] DeepAR.Train: train_loss: -0.029986320063471794
+[20:21:05] DeepAR.Train: train_loss: -0.029986320063471794
+[20:21:12] DeepAR.Eval: - Full test metrics: ND: 0.094; RMSE: 0.204; test_loss: 3.793
+[20:21:12] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_8.pth.tar
+[20:21:12] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:21:12] DeepAR.Train: - Found new best ND
+[20:21:12] DeepAR.Train: Current Best ND is: 0.09444
+[20:21:12] DeepAR.Train: Epoch 10/10
+[20:21:12] DeepAR.Train: train_loss: -0.09309396892786026
+[20:21:12] DeepAR.Train: train_loss: -0.09309396892786026
+[20:21:19] DeepAR.Eval: - Full test metrics: ND: 0.086; RMSE: 0.170; test_loss: 3.750
+[20:21:19] DeepAR.Utils: Checkpoint saved to experiments/param_search/lam_0.04-lstm_dropout_0.20-lstm_hidden_dim_5.00/epoch_9.pth.tar
+[20:21:19] DeepAR.Utils: Best checkpoint copied to best.pth.tar
+[20:21:19] DeepAR.Train: - Found new best ND
+[20:21:19] DeepAR.Train: Current Best ND is: 0.08628

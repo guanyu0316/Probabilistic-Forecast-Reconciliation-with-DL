@@ -24,7 +24,7 @@ args: argparse.ArgumentParser
 search_params: dict
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default='tourism', help='Dataset name')
+parser.add_argument('--dataset', default='infant', help='Dataset name')
 parser.add_argument('--data-dir', default='data', help='Directory containing the dataset')
 parser.add_argument('--model-name', default='param_search', help='Parent directory for all jobs')
 parser.add_argument('--relative-metrics', action='store_true', help='Whether to normalize the metrics by label scales')
@@ -40,9 +40,9 @@ def launch_training_job(search_range,search_params,param_template,gpu_ids,model_
 
     search_range = search_range[0]
     params = {k: search_params[k][search_range[idx]] for idx, k in enumerate(sorted(search_params.keys()))}
-    model_param_list = '-'.join('_'.join((k, f'{v}')) for k, v in params.items())
+    model_param_list = '-'.join('_'.join((k, f'{v:.2f}')) for k, v in params.items())
     if os.path.exists(f'experiments/param_search/{model_param_list}'):
-        logger.info(f'Already exist this train{model_param_list}')
+        logger.info('Already exist this train')
     else:
         model_param = copy(param_template)
         for k, v in params.items():
@@ -96,13 +96,14 @@ def main():
 
     # Perform hypersearch over parameters listed below
     search_params = {
-        'lstm_dropout': [0.4],
-        'lam':[0.002]
+        'lstm_dropout': np.arange(0, 0.201, 0.2).tolist(),
+        'lstm_hidden_dim': np.arange(5, 60, 30).tolist(),
+        'lam':np.arange(0, 0.3, 0.02).tolist()
     }
 
     keys = sorted(search_params.keys())
     search_range = list(product(*[[*range(len(search_params[i]))] for i in keys]))
-    logger.info(search_range)
+
     func_p = partial(launch_training_job, search_params=search_params,param_template=param_template,gpu_ids=gpu_ids,model_dir=model_dir,args=args)
     pool = multiprocessing.Pool(len(gpu_ids))
     pool.map(func_p, [(i, ) for i in search_range])

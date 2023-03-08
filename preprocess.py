@@ -21,13 +21,13 @@ import argparse
 import json
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default='tourism', help='Name of the dataset')
+parser.add_argument('--dataset', default='infant', help='Name of the dataset')
 
 def gen_covariates(times, num_covariates):
     covariates = np.zeros((times.shape[0], num_covariates))
     for i, input_time in enumerate(times):
-        covariates[i, 1] = input_time.quarter
-        covariates[i, 2] = input_time.year
+        # covariates[i, 1] = input_time.quarter
+        covariates[i, 1] = input_time.year
     for i in range(1,num_covariates):
         covariates[:,i] = stats.zscore(covariates[:,i])
     return covariates[:, :num_covariates]
@@ -124,15 +124,15 @@ if __name__=='__main__':
     window_size = 8
     stride_size = 2
 
-    train_start = '1998-01-01'
-    train_end = '2014-10-01'
-    test_start = '2014-01-01' #need additional 7 days as given info 
-    test_end = '2016-10-01'
+    train_start = '1933-12-31'
+    train_end = '1995-12-31'
+    test_start = '1992-12-31' #need additional 7 days as given info 
+    test_end = '2003-12-31'
 
     data = pd.read_csv(f'data/{data_name}.csv',index_col=0)  # 输入数据格式 sku-group time value
-    group_names = ['State','Region','Purpose']
-    time_name = 'Quarter'
-    target_name = 'Trips'
+    group_names = ['state','gender']
+    time_name = 'year'
+    target_name = 'deaths'
 
     data['sku']=data[group_names].apply(lambda x: 'total'+'_'+'_'.join(x),axis=1)
 
@@ -160,11 +160,9 @@ if __name__=='__main__':
         data[k] = data[hier_dict[k]].sum(axis=1)
 
 
-    num_covariates = 3
+    num_covariates = 2
     covariates = gen_covariates(data[train_start:test_end].index, num_covariates)
     
-
-
     ## you can import covariates from csv or generating covariates by yourself
     # covariates = pd.read_csv(f'data/{data_name}_cov.csv',index_col=0)
     # num_covariates = len(covariates.columns)-1   #????
@@ -177,17 +175,16 @@ if __name__=='__main__':
     data_start = np.zeros(num_series,dtype='int64')
 
 
-
     train_x_input, train_v_input, train_label = prep_data(train_data, covariates, data_start)
     test_x_input, test_v_input, test_label = prep_data(test_data, covariates, data_start, train=False)
 
-    np.save(f'data/{data_name}/train_data_tourism', train_x_input)
-    np.save(f'data/{data_name}/train_v_tourism', train_v_input)
-    np.save(f'data/{data_name}/train_label_tourism',train_label)
+    np.save(f'data/{data_name}/train_data_{data_name}', train_x_input)
+    np.save(f'data/{data_name}/train_v_{data_name}', train_v_input)
+    np.save(f'data/{data_name}/train_label_{data_name}',train_label)
 
-    np.save(f'data/{data_name}/test_data_tourism', test_x_input)
-    np.save(f'data/{data_name}/test_v_tourism', test_v_input)
-    np.save(f'data/{data_name}/test_label_tourism',test_label)
+    np.save(f'data/{data_name}/test_data_{data_name}', test_x_input)
+    np.save(f'data/{data_name}/test_v_{data_name}', test_v_input)
+    np.save(f'data/{data_name}/test_label_{data_name}',test_label)
 
     np.save(f'data/{data_name}/hier_dict_name.npy', hier_dict)
 

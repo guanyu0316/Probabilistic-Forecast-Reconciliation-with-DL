@@ -19,9 +19,8 @@ import matplotlib.pyplot as plt
 logger = logging.getLogger('DeepAR.Eval')
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default='tourism', help='Name of the dataset')
+parser.add_argument('--dataset', default='infant', help='Name of the dataset')
 parser.add_argument('--data-folder', default='data', help='Parent dir of the dataset')
-parser.add_argument('--model-name', default='param_search/lam_0.0-lstm_dropout_0.4', help='Directory containing params.json')
 parser.add_argument('--relative-metrics', action='store_true', help='Whether to normalize the metrics by label scales')
 parser.add_argument('--sampling', action='store_true', help='Whether to sample during evaluation')
 parser.add_argument('--restore-file', default='best',
@@ -73,12 +72,12 @@ def evaluate(model, loss_fn, test_loader, params, plot_num, dataset,sample=True)
               input_sigma[:,t] = v_batch[:, 0] * sigma
 
           if sample:
-              samples, sample_mu, sample_sigma = model.test(test_batch, v_batch, id_batch, hidden, cell, sampling=True)
+              samples, sample_mu, sample_sigma = model.test2(test_batch, v_batch, id_batch, hidden, cell, sampling=True)
               print(sample_mu.shape)
               print(sample_sigma.shape)
               raw_metrics = utils.update_metrics(raw_metrics, input_mu, input_sigma, sample_mu, labels, params.test_predict_start, params.lam,params.dataset, samples,relative = params.relative_metrics)
           else:
-              sample_mu, sample_sigma = model.test(test_batch, v_batch, id_batch, hidden, cell)
+              sample_mu, sample_sigma = model.test2(test_batch, v_batch, id_batch, hidden, cell)
               raw_metrics = utils.update_metrics(raw_metrics, input_mu, input_sigma, sample_mu, labels, params.test_predict_start, params.lam,params.dataset, relative = params.relative_metrics)
 
           if i == 2: ### plot
@@ -113,7 +112,7 @@ def evaluate(model, loss_fn, test_loader, params, plot_num, dataset,sample=True)
       metrics_string = '; '.join('{}: {:05.3f}'.format(k, v) for k, v in summary_metric.items())
       logger.info('- Full test metrics: ' + metrics_string)
       if plot_num==-1:
-        np.save(f'result/deepar_hier/metrics.npy', plot_metrics)
+        np.save(f'result/{model_type}/metrics.npy', plot_metrics)
     return summary_metric,plot_metrics
 
 
@@ -130,51 +129,38 @@ def plot_eight_windows(plot_dir,
 
     series_names = list(pd.read_csv(f'data/{dataset}/series_names.csv',index_col=0)['0'])
     x = np.arange(window_size)
-    f = plt.figure(figsize=(50, 200))
+    f = plt.figure(figsize=(500, 100))
     ncols = 5
     nrows = int(predict_values.shape[0]/ncols)+1
     ax = f.subplots(nrows, ncols)
 
     m=-1
+    mu_pred_l = []
+    std_pred_l = []
     for i in range(ax.shape[0]):
         for j in range(ax.shape[1]):
             m=m+1
             if m<predict_values.shape[0]:
-                ax[i,j].plot(x, predict_values[m], color='b',label='predict')
-                ax[i,j].fill_between(x[predict_start:], predict_values[m, predict_start:] - 2 * predict_sigma[m, predict_start:],
-                                predict_values[m, predict_start:] + 2 * predict_sigma[m, predict_start:], color='blue',
-                                alpha=0.2,label='95% interval predict')
-                ax[i,j].plot(x, labels[m, :], color='r',label='truth')
-                ax[i,j].axvline(predict_start, color='g', linestyle='dashed')
+                mu_pred_l.append(pd.DataFrame(predict_values[m, predict_start:]))
+                std_pred_l.append(pd.DataFrame(predict_sigma[m, predict_start:]))
+    mu_pred_df = pd.concat(mu_pred_l,axis=1)
+    std_pred_df = pd.concat(std_pred_l,axis=1)
+    mu_pred_df.columns = series_names
+    std_pred_df.columns = series_names
+    mu_pred_df.to_csv(f'result/{model_type}/mu_pred.csv')
+    std_pred_df.to_csv(f'result/{model_type}/std_pred.csv')
 
-                #metrics = utils.final_metrics_({_k: [_i[k] for _i in _v] for _k, _v in plot_metrics.items()})
-
-
-                plot_metrics_str = f'ND: {plot_metrics["ND"][m]: .3f} ' \
-                    f'RMSE: {plot_metrics["RMSE"][m]: .3f}' \
-                    f' CRPS: {plot_metrics["CRPS"][m]: .3f}'
-                if sampling:
-                    plot_metrics_str += f' rou90: {plot_metrics["rou90"][m]: .3f} ' \
-                                        f'rou50: {plot_metrics["rou50"][m]: .3f}'
-
-                ax[i,j].set_title(plot_metrics_str,fontsize= 15)
-                ax[i,j].set_xlabel(f'{series_names[m]}',fontsize= 15)
-                ax[i,j].legend(loc='best',fontsize= 15)
-    plt.tight_layout()
-    f.savefig(os.path.join(plot_dir, str(plot_num) + '.png'))
-    plt.close()
-
-    ## print all levels mean CRPS RMSE ND
-    print(f"all levels' mean ND: {np.mean(plot_metrics['ND']): .3f}")
-    print(f"all levels' mean RMSE: {np.mean(plot_metrics['RMSE']): .3f}")
-    print(f"all levels' mean CRPS: {np.mean(plot_metrics['CRPS']): .3f}")
+    # ls' mean CRPS: {np.mean(plot_metrics['CRPS']): .3f}")
 
 if __name__ == '__main__':
-    if not os.path.exists(f'result/deepar_hier'): 
-        os.makedirs(f'result/deepar_hier')
+
+    ############evaluate deepar-hier#############
+    model_type='deepar_hier'
+    if not os.path.exists(f'result/{model_type}'): 
+        os.makedirs(f'result/{model_type}')
     # Load the parameters
     args = parser.parse_args()
-    model_dir = os.path.join('experiments', args.model_name) 
+    model_dir ='experiments/param_search/lam_0.12-lstm_dropout_0.00-lstm_hidden_dim_35.00'
     json_path = os.path.join(model_dir, 'params.json')
     data_dir = os.path.join(args.data_folder, args.dataset)
     assert os.path.isfile(json_path), 'No json configuration file found at {}'.format(json_path)
@@ -212,7 +198,7 @@ if __name__ == '__main__':
     print('model: ', model)
     loss_fn = net.loss_fn
 
-    logger.info('Starting evaluation')
+    logger.info('Starting evaluate deepar-hier')
 
     # Reload weights from the saved file
     utils.load_checkpoint(os.path.join(model_dir, args.restore_file + '.pth.tar'), model)
@@ -220,3 +206,57 @@ if __name__ == '__main__':
     test_metrics,plot_metrics = evaluate(model, loss_fn, test_loader, params, -1, args.dataset,params.sampling)
     save_path = os.path.join(model_dir, 'metrics_test_{}.json'.format(args.restore_file))
     utils.save_dict_to_json(test_metrics, save_path)
+
+    ############evaluate deepar#############
+    model_type='deepar'
+    if not os.path.exists(f'result/{model_type}'): 
+        os.makedirs(f'result/{model_type}')
+    # Load the parameters
+    args = parser.parse_args()
+    model_dir ='experiments/param_search/lam_0.00-lstm_dropout_0.00-lstm_hidden_dim_5.00'
+    json_path = os.path.join(model_dir, 'params.json')
+    data_dir = os.path.join(args.data_folder, args.dataset)
+    assert os.path.isfile(json_path), 'No json configuration file found at {}'.format(json_path)
+    params = utils.Params(json_path)
+
+    utils.set_logger(os.path.join(model_dir, 'eval.log'))
+
+    params.relative_metrics = args.relative_metrics
+    params.sampling = args.sampling
+    params.model_dir = model_dir
+    params.plot_dir = os.path.join(model_dir, 'figures')
+    params.dataset = args.dataset
+    
+    cuda_exist = torch.cuda.is_available()  # use GPU is available
+
+    # Set random seeds for reproducible experiments if necessary
+    if cuda_exist:
+        params.device = torch.device('cuda')
+        # torch.cuda.manual_seed(240)
+        logger.info('Using Cuda...')
+        model = net.Net(params).cuda()
+    else:
+        params.device = torch.device('cpu')
+        # torch.manual_seed(230)
+        logger.info('Not using cuda...')
+        model = net.Net(params)
+
+    # Create the input data pipeline
+    logger.info('Loading the datasets...')
+
+    test_set = TestDataset(data_dir, args.dataset, params.num_class)
+    test_loader = DataLoader(test_set, batch_size=params.predict_batch, shuffle=False, num_workers=4)
+    logger.info('- done.')
+
+    print('model: ', model)
+    loss_fn = net.loss_fn
+
+    logger.info('Starting evaluate deepar')
+
+    # Reload weights from the saved file
+    utils.load_checkpoint(os.path.join(model_dir, args.restore_file + '.pth.tar'), model)
+
+    test_metrics,plot_metrics = evaluate(model, loss_fn, test_loader, params, -1, args.dataset,params.sampling)
+    save_path = os.path.join(model_dir, 'metrics_test_{}.json'.format(args.restore_file))
+    utils.save_dict_to_json(test_metrics, save_path)
+
