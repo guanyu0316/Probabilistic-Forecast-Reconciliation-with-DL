@@ -13,5 +13,10 @@ Specifically,
 - `base_hier.py`: run other existing probabilistic forecast reconciliation methods.
 - `compare.py`: compare deepar-hier and other methods, output CRPS and MCB results.
 
+Deepar related code refers to <https://github.com/husnejahan/DeepAR-pytorch>
+
+
+
+
 
 
