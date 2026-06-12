@@ -8,8 +8,13 @@ from statsmodels.tsa.statespace.exponential_smoothing import ExponentialSmoothin
 import CRPS.CRPS as pscore
 import argparse
 import datetime
-import hts
 import collections
+import collections.abc
+
+if not hasattr(collections, 'Iterable'):
+    collections.Iterable = collections.abc.Iterable
+
+import hts
 import multiprocessing
 import copy
 from functools import partial
