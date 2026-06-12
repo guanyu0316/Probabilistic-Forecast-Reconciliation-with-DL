@@ -83,8 +83,10 @@ def arima_prob(y,fh,sp,max_p,max_q,d=None):
     # step 5: querying predictions
     var_pred = forecaster.predict_var()
     mu_pred = forecaster.predict()
+    if isinstance(var_pred, pd.DataFrame):
+        var_pred = var_pred.iloc[:, 0]
 
-    return mu_pred,var_pred[0]
+    return mu_pred,var_pred
 
 def ets_prob(y,fh,sp):
 
