@@ -27,7 +27,7 @@ parser.add_argument('--dataset', default='infant', help='Name of the dataset')
 parser.add_argument('--fcst_model', default='arima', help='Base forecast model')
 parser.add_argument('--permute_method', default='stack', help='The permutation of sample')
 parser.add_argument('--rcc_method', default='mint', help='Reconciliation method')
-parser.add_argument('--rcc_covariance', default=None, help='The covariance form of mint')
+parser.add_argument('--rcc_covariance', default='ols', help='The covariance form of mint')
 
 
 def prepare_data(freq1,freq2):
