@@ -1,6 +1,11 @@
-python preprocess.py
-python base_hier.py
+#!/usr/bin/env bash
+set -euo pipefail
+
+PYTHON_BIN="${PYTHON:-python3}"
+
+"$PYTHON_BIN" preprocess.py
+"$PYTHON_BIN" base_hier.py
 # evaluate deepar and deepar-hier
-python evaluate.py
+"$PYTHON_BIN" evaluate.py
 # output comparison result
-python compare.py
+"$PYTHON_BIN" compare.py

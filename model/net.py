@@ -6,6 +6,12 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 import logging
+import collections
+import collections.abc
+
+if not hasattr(collections, 'Iterable'):
+    collections.Iterable = collections.abc.Iterable
+
 import hts
 
 
